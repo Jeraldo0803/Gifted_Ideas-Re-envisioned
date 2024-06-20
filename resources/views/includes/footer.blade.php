@@ -1,0 +1,1 @@
+<div id="copyright">© Copyright 2024 Gifted Ideas</div>
