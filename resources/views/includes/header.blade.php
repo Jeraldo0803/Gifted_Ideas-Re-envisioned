@@ -19,6 +19,27 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item dropdown"></li>
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle btn btn-primary" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            {{ __("Find Products") }}
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-center">
+                                    {{ __('All Categories') }}
+                                </a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-center">
+                                    {{ __('Clothing/Apparel') }}
+                                </a></li>
+                        </ul>
+
+                        <li class="nav-item"></li>
+                        <a class="nav-link" href="/about"> {{ __("About us") }} </a>
+
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
@@ -32,6 +53,7 @@
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
+
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
@@ -40,8 +62,9 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                                     document.getElementById('logout-form').submit();">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                        onclick="event.preventDefault();
+                                                                                                                                                                                                                     document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 
@@ -51,6 +74,9 @@
                                 </div>
                             </li>
                         @endguest
+
+                        <li class="nav-item"></li>
+                        <a class="nav-link" href="/inquire">{{ __('Inquire Now') }}</a>
                     </ul>
                 </div>
             </div>

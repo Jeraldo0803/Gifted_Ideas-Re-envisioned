@@ -1,1 +1,1 @@
-<div id="copyright">© Copyright 2024 Gifted Ideas</div>
+<div id="copyright" class="row justify-content-center">© Copyright 2024 Gifted Ideas</div>
