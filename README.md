@@ -1,6 +1,7 @@
 # Gifted Ideas Re-envisioned
 
 ## Requirements
+- Apache Web Server (XAMPP installs this for you)
 - Composer
 - Node & npm (For bootstrap)
 - MySQL
