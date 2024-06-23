@@ -1,5 +1,10 @@
 # Gifted Ideas Re-envisioned
 
+## Requirements
+- Composer
+- Node & npm (For bootstrap)
+- MySQL
+
 ## How to clone and run dev to your local repository
 1. Clone anywhere in your local machine.
 2. Under root repository `C:/Gifted_Ideas-Re-envisioned/` assuming you have Composer installed in your local machine, type in the terminal `composer install` to install all necessary dependencies.
